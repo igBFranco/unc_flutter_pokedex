@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class DetailImage extends StatelessWidget {
-  final String image;
-  const DetailImage({Key? key, required this.image}) : super(key: key);
+  final String? image;
+  const DetailImage({Key? key, this.image}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class DetailImage extends StatelessWidget {
               ),
             ),
             Image.network(
-              image,
+              image!,
               fit: BoxFit.contain,
               alignment: Alignment.topRight,
             )

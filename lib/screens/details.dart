@@ -21,7 +21,7 @@ class Details extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         child: Column(
           children: [
-            DetailImage(image: arguments.image),
+            //DetailImage(image: arguments.image),
             DetailTitle(
               id: arguments.id,
               name: arguments.name,

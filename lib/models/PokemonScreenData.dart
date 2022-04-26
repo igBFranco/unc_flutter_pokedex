@@ -1,7 +1,6 @@
 class PokemonScreenData {
-  final int id;
-  final String name;
-  final String image;
+  final int? id;
+  final String? name;
 
-  PokemonScreenData(this.id, this.name, this.image);
+  PokemonScreenData(this.id, this.name);
 }
