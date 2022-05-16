@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:unc_flutter_pokedex/screens/details.dart';
 import 'package:unc_flutter_pokedex/screens/home.dart';
+import 'package:unc_flutter_pokedex/screens/details_pokemon.dart';
 
 void main() {
   // chamando o App para execuçao
@@ -24,7 +25,9 @@ class App extends StatelessWidget {
         "/": (context) => const Home(),
         // já criando a rota para exibir os detalhes
         // do pokémon
-        "/details": (context) => const Details(),
+        //"/details": (context) => const Details(),
+        "/details": (context) =>
+            const DetailsPokemon('https://pokeapi.co/api/v2/pokemon/charmander')
       },
     );
   }
