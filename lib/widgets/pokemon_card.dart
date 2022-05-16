@@ -33,7 +33,7 @@ class PokemonCard extends StatelessWidget {
           Navigator.pushNamed(
             context,
             "/details",
-            arguments: PokemonScreenData(id, name),
+            arguments: PokemonScreenData(name),
           )
         },
         child: Container(

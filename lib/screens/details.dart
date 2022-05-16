@@ -23,7 +23,6 @@ class Details extends StatelessWidget {
           children: [
             //DetailImage(image: arguments.image),
             DetailTitle(
-              id: arguments.id,
               name: arguments.name,
             ),
             DetailData(),

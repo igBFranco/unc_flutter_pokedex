@@ -26,8 +26,8 @@ class App extends StatelessWidget {
         // já criando a rota para exibir os detalhes
         // do pokémon
         //"/details": (context) => const Details(),
-        "/details": (context) =>
-            const DetailsPokemon('https://pokeapi.co/api/v2/pokemon/charmander')
+        "/details": (context) => const DetailsPokemon(
+            url: "https://pokeapi.co/api/v2/pokemon/charmander"),
       },
     );
   }

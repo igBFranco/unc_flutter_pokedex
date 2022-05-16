@@ -59,6 +59,7 @@ class _DetailsPokemonState extends State<DetailsPokemon> {
                     FloatingActionButtonLocation.startFloat,
               );
             }
+            return Container();
           }
         });
   }
