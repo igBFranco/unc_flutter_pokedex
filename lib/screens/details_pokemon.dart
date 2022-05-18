@@ -6,6 +6,7 @@ import 'package:unc_flutter_pokedex/models/poke_model.dart';
 import 'package:unc_flutter_pokedex/widgets/detail_back_button.dart';
 import 'package:unc_flutter_pokedex/widgets/detail_data.dart';
 import 'package:unc_flutter_pokedex/widgets/detail_title.dart';
+import 'package:unc_flutter_pokedex/widgets/detail_image.dart';
 
 class DetailsPokemon extends StatefulWidget {
   final String? url;
@@ -48,9 +49,14 @@ class _DetailsPokemonState extends State<DetailsPokemon> {
                   physics: const BouncingScrollPhysics(),
                   child: Column(
                     children: [
-                      //DetailImage(image: arguments.image),
-                      DetailTitle(id: id, name: name),
-                      const DetailData(),
+                      DetailTitle(
+                          id: snapshot.data!.id, name: snapshot.data!.name),
+                      DetailImage(
+                          image:
+                              "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/$id.png"),
+                      DetailData(
+                        pokemon: snapshot.data!,
+                      ),
                     ],
                   ),
                 ),

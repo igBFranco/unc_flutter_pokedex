@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:unc_flutter_pokedex/models/poke_model.dart';
 
 class DetailData extends StatelessWidget {
-  const DetailData({Key? key}) : super(key: key);
+  final Pokemon? pokemon;
+  const DetailData({Key? key, this.pokemon}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
