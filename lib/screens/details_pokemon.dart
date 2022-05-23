@@ -41,7 +41,7 @@ class _DetailsPokemonState extends State<DetailsPokemon> {
               final id = snapshot.data!.id;
               final name = snapshot.data!.name;
               return Scaffold(
-                backgroundColor: Colors.black,
+                backgroundColor: const Color.fromRGBO(228, 228, 228, 1),
                 body: SingleChildScrollView(
                   padding: EdgeInsets.only(
                     top: MediaQuery.of(context).padding.top,

@@ -8,7 +8,7 @@ class DetailImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       constraints: const BoxConstraints(maxHeight: 500),
-      color: Colors.black,
+      color: Color.fromRGBO(228, 228, 228, 1),
       child: Center(
         child: Stack(
           children: [
